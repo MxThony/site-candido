@@ -19,6 +19,17 @@ body{
     margin: 0 auto;
 }
 
+.flex{
+    display: flex;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
 
 /* Estilo do cabeçalho */
 
@@ -168,4 +179,31 @@ header nav ul li{
 /* Estilo da barra de rolagem ao passar o mouse (opcional) */
 ::-webkit-scrollbar-thumb:hover {
     background-color: #7f7f7f5a; /* Cor mais escura quando o mouse está sobre a barra */
+}
+
+
+
+/*SOBRE MIM*/
+
+section.sobre{
+    padding: 100px 4%;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 50px;
+}
+
+.img-candido{
+    width: 700px;
+}
+
+.sobre .img-sobre{
+
+
+}
+
+.txt-sobre{
+
+
 }
