@@ -207,3 +207,121 @@ section.sobre .flex{
 
 
 }
+
+
+
+
+
+
+
+
+
+/* Estilo para tablets */
+
+
+@media (min-width: 998px) and (max-width: 1024px) {
+    
+    /* Ajuste no menu fixo para tablets */
+    .menu-fixo {
+        height: 80px;
+        padding-left: 40px; /* Aumenta o espaço à esquerda do menu */
+    }
+
+    /* Ajuste na marca para tablets */
+    .marca-do-menu {
+        margin-bottom: 0px;
+        flex-shrink: 0; /* Impede que a marca encolha */
+        width: 140px; /* Ajusta o tamanho da marca */
+    }
+
+    /* Ajuste na interface para garantir que a logo e o menu se distribuam corretamente */
+    .interface {
+        display: flex;
+        justify-content: space-between; /* Deixa espaço entre a logo e o menu */
+        align-items: center; /* Centraliza verticalmente os itens */
+    }
+
+    /* Exibe o menu, mas reduz os itens */
+    header nav ul {
+        display: flex; /* Mostra os itens do menu */
+        flex-wrap: wrap; /* Permite que os itens se ajustem */
+        justify-content: space-between; /* Distribui os itens com espaços entre eles */
+    }
+
+    /* Reduz o tamanho da fonte dos itens do menu */
+    header nav ul li {
+        padding: 0 20px; /* Reduz o espaçamento entre os itens */
+    }
+
+    /* Ajusta a apresentação das imagens */
+    .apresentacao {
+        grid-template-columns: repeat(3, 1fr); /* 3 colunas para tablets */
+    }
+
+    /* Reduz o tamanho da fonte nos itens de menu para ajustar ao espaço */
+    header nav ul li a {
+        font-size: 20px; /* Reduz o tamanho da fonte */
+    }
+
+    /* Ajustes no botão de contato (ainda visível no tablet) */
+    .contato {
+        display: block; /* Mantém os ícones de contato visíveis */
+    }
+
+    .contato a {
+        padding: 5px;
+    }
+}
+
+
+
+
+@media (max-width: 997px) {
+
+    header{
+        padding: 8px 4%;
+    }
+    body{
+        margin-top: 60px;
+    }
+
+    /* Ajusta a margem à esquerda do menu para mais espaço */
+    .menu-fixo {
+        height: 60px;
+        padding-left: 40px; /* Aumenta o espaço à esquerda do menu */
+    }
+
+    /* A marca vai continuar à esquerda e não será centralizada */
+    .marca-do-menu {
+        margin-bottom: 5px;
+        flex-shrink: 0; /* Impede que a marca encolha */
+        width: 120px; /* Ajusta o tamanho da marca */
+    }
+
+    /* Ajuste na interface para garantir que o espaço da marca à esquerda não afete o layout */
+    .interface {
+        display: flex;
+        justify-content: space-between; /* Deixa espaço entre a logo e o menu */
+        align-items: center; /* Centraliza verticalmente os itens */
+    }
+
+    /* Esconde a div de contato no mobile */
+    .contato {
+        display: none; /* Esconde a div de contato */
+    }
+
+    /* Esconde os itens do menu no mobile */
+    header nav ul {
+        display: none; /* Esconde o menu de navegação */
+    }
+
+    /* Exibe a largura correta da marca */
+    .marca-do-menu {
+        width: 120px;
+    }
+
+    /* Ajuste de layout das colunas de imagens */
+    .apresentacao {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas para dispositivos móveis */
+    }
+}
